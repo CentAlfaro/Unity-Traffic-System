@@ -173,6 +173,7 @@ MonoBehaviour:
   - {fileID: 1767654026}
   - {fileID: 192790018}
   - {fileID: 988482902}
+  stopLight: {fileID: 1010463909}
   car: {fileID: 8580129078058753285, guid: 9f7825fe05a3d604db8c4e3c9972b6d4, type: 3}
 --- !u!65 &43031747
 BoxCollider:
@@ -683,8 +684,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410997072}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: -0.42088193, y: 0.35072353, z: -0.18076536, w: -0.81680804}
+  m_LocalPosition: {x: 6.303513, y: 20.549374, z: -13.787523}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -836,7 +837,7 @@ Transform:
   m_GameObject: {fileID: 929495625}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -8.26, y: 1.07, z: 2.95}
-  m_LocalScale: {x: 1, y: 1, z: 3.1287055}
+  m_LocalScale: {x: 0.1, y: 1, z: 3.1287055}
   m_Children: []
   m_Father: {fileID: 2078009994}
   m_RootOrder: 1
@@ -932,6 +933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPos: {x: 0, y: 0, z: 0}
+  LightStatus: 
 --- !u!208 &929495632
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1281,7 +1283,7 @@ Transform:
   m_GameObject: {fileID: 1010463903}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -10.93, y: 1.075, z: -3.7521}
-  m_LocalScale: {x: 1, y: 1, z: 3.57126}
+  m_LocalScale: {x: 0.1, y: 1, z: 3.57126}
   m_Children: []
   m_Father: {fileID: 2078009994}
   m_RootOrder: 2
@@ -1377,6 +1379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPos: {x: 0, y: 0, z: 0}
+  LightStatus: 
 --- !u!208 &1010463910
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -1443,6 +1446,7 @@ MonoBehaviour:
   - {fileID: 988482902}
   - {fileID: 192790018}
   - {fileID: 1421598245}
+  stopLight: {fileID: 929495631}
   car: {fileID: 8580129078058753285, guid: 9f7825fe05a3d604db8c4e3c9972b6d4, type: 3}
 --- !u!65 &1126663551
 BoxCollider:
@@ -1841,6 +1845,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPos: {x: 0, y: 0, z: 0}
+  LightStatus: 
 --- !u!54 &1553120515
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1928,7 +1933,7 @@ Transform:
   m_GameObject: {fileID: 1553120513}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -5.0179, y: 1.075, z: -6.23}
-  m_LocalScale: {x: 1, y: 1, z: 3.0061984}
+  m_LocalScale: {x: 0.1, y: 1, z: 3.0061984}
   m_Children: []
   m_Father: {fileID: 2078009994}
   m_RootOrder: 3
@@ -1999,6 +2004,7 @@ MonoBehaviour:
   - {fileID: 1421598245}
   - {fileID: 1767654026}
   - {fileID: 988482902}
+  stopLight: {fileID: 1553120514}
   car: {fileID: 8580129078058753285, guid: 9f7825fe05a3d604db8c4e3c9972b6d4, type: 3}
 --- !u!65 &1558317594
 BoxCollider:
@@ -2174,6 +2180,7 @@ MonoBehaviour:
   - {fileID: 1421598245}
   - {fileID: 1767654026}
   - {fileID: 192790018}
+  stopLight: {fileID: 1968191291}
   car: {fileID: 8580129078058753285, guid: 9f7825fe05a3d604db8c4e3c9972b6d4, type: 3}
 --- !u!1 &1673620697
 GameObject:
@@ -2446,8 +2453,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968191285}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.14, y: 1.075, z: -0.04}
-  m_LocalScale: {x: 1, y: 1, z: 3.640463}
+  m_LocalPosition: {x: -3.14, y: 1.03, z: -0.04}
+  m_LocalScale: {x: 0.1, y: 1, z: 3.640463}
   m_Children: []
   m_Father: {fileID: 2078009994}
   m_RootOrder: 0
@@ -2543,6 +2550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPos: {x: 0, y: 0, z: 0}
+  LightStatus: 
 --- !u!208 &1968191292
 NavMeshObstacle:
   m_ObjectHideFlags: 0

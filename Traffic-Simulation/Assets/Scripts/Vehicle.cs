@@ -8,8 +8,13 @@ public class Vehicle : MonoBehaviour
 {
     private NavMeshAgent _agent;
 
+    [SerializeField] private FrontBumper myBumper;
+
     [SerializeField] public Transform myDestination;
-    [SerializeField] private float vehicleSpeed = 4;
+    [SerializeField] public StopLight myStopLight;
+
+    //[SerializeField] private float vehicleSpeed = 4;
+
 
     private void Start()
     {
@@ -17,7 +22,8 @@ public class Vehicle : MonoBehaviour
         _agent.destination = myDestination.position;
     }
 
-    private void OnTriggerEnter(Collider other)
+
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("CarDestination"))
         {
@@ -29,7 +35,7 @@ public class Vehicle : MonoBehaviour
             _agent.speed = 0;
         }
 
-        if (other.CompareTag("StopLight"))
+        if (other.CompareTag("StopLight") && myStopLight.LightStatus == "Red")
         {
             _agent.speed = 0;
         }
@@ -42,9 +48,9 @@ public class Vehicle : MonoBehaviour
             _agent.speed = vehicleSpeed;
         }
         
-        if (other.CompareTag("StopLight"))
+        if (other.CompareTag("StopLight") && myStopLight.LightStatus == "Green")
         {
             _agent.speed = vehicleSpeed;
         }
-    }
+    }*/
 }
