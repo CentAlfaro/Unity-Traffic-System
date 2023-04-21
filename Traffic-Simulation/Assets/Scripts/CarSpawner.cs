@@ -8,6 +8,7 @@ using Random = UnityEngine.Random;
 public class CarSpawner : MonoBehaviour
 {
     [SerializeField] private List<Transform> carDestination = new List<Transform>();
+    [SerializeField] private StopLight stopLight;
     [SerializeField] private GameObject car;
 
     private bool _canSpawnVehicle = false;
@@ -18,8 +19,9 @@ public class CarSpawner : MonoBehaviour
     {
         if (_canSpawnVehicle)
         {
-            var temporaryCar = Instantiate(car, transform.position, Quaternion.identity);
+            var temporaryCar = Instantiate(car, transform.position, transform.rotation);
             temporaryCar.GetComponent<Vehicle>().myDestination = carDestination[Random.Range(0,carDestination.Count)];
+            temporaryCar.GetComponent<Vehicle>().myStopLight = stopLight;
 
             _canSpawnVehicle = false;
         }
