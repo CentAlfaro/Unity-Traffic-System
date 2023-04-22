@@ -8,7 +8,11 @@ using Random = UnityEngine.Random;
 public class CarSpawner : MonoBehaviour
 {
     [SerializeField] private List<Transform> carDestination = new List<Transform>();
+    [SerializeField] private StopLight stopLight;
     [SerializeField] private GameObject car;
+
+    [SerializeField] private float spawnTimerMin = 4f;
+    [SerializeField] private float spawnTimerMax = 12f;
 
     private bool _canSpawnVehicle = false;
     private bool _isRunning;
@@ -18,8 +22,9 @@ public class CarSpawner : MonoBehaviour
     {
         if (_canSpawnVehicle)
         {
-            var temporaryCar = Instantiate(car, transform.position, Quaternion.identity);
+            var temporaryCar = Instantiate(car, transform.position, transform.rotation);
             temporaryCar.GetComponent<Vehicle>().myDestination = carDestination[Random.Range(0,carDestination.Count)];
+            temporaryCar.GetComponent<Vehicle>().myStopLight = stopLight;
 
             _canSpawnVehicle = false;
         }
@@ -35,7 +40,7 @@ public class CarSpawner : MonoBehaviour
         if (!_isRunning)
         {
             _isRunning = true;
-            _randomValue = Random.Range(4, 12);
+            _randomValue = Random.Range(spawnTimerMin, spawnTimerMax);
             yield return new WaitForSeconds(_randomValue);
             _canSpawnVehicle = true;
             _isRunning = false;
