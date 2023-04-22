@@ -8,8 +8,6 @@ public class FrontBumper : MonoBehaviour
     [SerializeField] private NavMeshAgent myCarAgent;
     [SerializeField] private Vehicle myCar;
 
-    [SerializeField] private float vehicleSpeed = 4;
-
 
     private void OnTriggerEnter(Collider other)
     {

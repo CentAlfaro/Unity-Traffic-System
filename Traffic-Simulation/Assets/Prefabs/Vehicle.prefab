@@ -110,7 +110,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCarAgent: {fileID: 522014176246025528}
   myCar: {fileID: 595575675412052922}
-  vehicleSpeed: 4
 --- !u!1 &6115061917709897827
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +270,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4aa327df7c401724caf509df94b95d7c, type: 2}
+  - {fileID: 2100000, guid: 118ee638003bcd64cbea193caab37862, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -340,9 +339,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 412babd32d9cb944fb1446a1c8ec46b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myBumper: {fileID: 0}
   myDestination: {fileID: 0}
   myStopLight: {fileID: 0}
+  colorMaterials:
+  - {fileID: 2100000, guid: 4aa327df7c401724caf509df94b95d7c, type: 2}
+  - {fileID: 2100000, guid: 14524a7d942a3fe44b151631848a0b23, type: 2}
+  - {fileID: 2100000, guid: 97ec853acd34a0c409f2234bf97f0bc6, type: 2}
+  - {fileID: 2100000, guid: 118ee638003bcd64cbea193caab37862, type: 2}
+  - {fileID: 2100000, guid: 13cca4c4fce0d244cbb009bb545520d8, type: 2}
+  - {fileID: 2100000, guid: b5343d5aae7a8074f973db664fc4de7d, type: 2}
 --- !u!54 &2293410089140205739
 Rigidbody:
   m_ObjectHideFlags: 0
